@@ -1,73 +1,87 @@
-/* ====================
-  マイページデザイン
-==================== */
 .profile-container {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
-    background: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #fff;
     border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-/* ユーザー情報 */
-.profile-info {
-    margin-bottom: 20px;
-}
-
-.profile-info h2 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-}
-
-.profile-info p {
-    font-size: 16px;
-    color: #666;
-}
-
-/* セクションタイトル */
-h3 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 30px;
-    border-bottom: 2px solid #0073cc;
-    display: inline-block;
-    padding-bottom: 5px;
-}
-
-/* 購入 & 出品リスト */
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    background: #f9f9f9;
-    padding: 12px;
-    margin: 10px 0;
-    border-radius: 5px;
-    font-size: 16px;
-    color: #333;
+.profile-header {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 15px;
 }
 
-/* プロフィール編集ボタン */
-.edit-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 20px;
-    background-color: #0073cc;
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ddd;
+}
+
+.edit-profile-button {
+    padding: 8px 15px;
+    background: #ff5555;
     color: white;
-    text-decoration: none;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-profile-button:hover {
+    background: #d33;
+}
+
+.tab-menu {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.tab-button {
+    padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
-    border-radius: 5px;
-    transition: 0.3s;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #777;
 }
 
-.edit-button:hover {
-    background-color: #005aa7;
+.tab-button.active {
+    color: #ff5555;
+    border-bottom: 3px solid #ff5555;
+}
+
+.item-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.item-card {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.item-card img {
+    width: 100%;
+    height: auto;
+    max-height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.item-card h3 {
+    font-size: 14px;
+    margin-top: 8px;
 }
