@@ -35,7 +35,5 @@
 
         <button type="submit" class="confirm-button">購入を確定する</button>
     </form>
-
-    <a href="{{ route('purchase.show', $item->id) }}" class="back-button">戻る</a>
 </div>
 @endsection

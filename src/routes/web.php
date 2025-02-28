@@ -59,3 +59,4 @@ Route::middleware('auth')->group(function () {
 
 Route::post('/favorite/{item_id}', [FavoriteController::class, 'toggle'])->name('favorite.toggle');
 
+Route::post('/item/{item_id}/comments', [CommentController::class, 'store'])->name('comments.store');
