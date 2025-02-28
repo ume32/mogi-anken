@@ -3,17 +3,26 @@
 @section('title', 'ログイン')
 
 @section('css')
-<link rel="stylesheet" href="{{ asset('css/login.css') }}">
+<link rel="stylesheet" href="{{ asset('css/auth/login.css') }}">
 @endsection
 
 @section('content')
 <div class="login-container">
     <h1 class="login-title">ログイン</h1>
-    <form method="POST" action="{{ route('auth.login') }}" class="login-form">
+    @if ($errors->any())
+    <div class="error-messages">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+    <form class="form" action="{{ route('login') }}" method="post">
         @csrf
         <div class="form-group">
             <label for="email">ユーザー名 / メールアドレス</label>
-            <input type="text" name="email" id="email" class="form-input" required>
+            <input type="text" name="email" id="email" class="form-input" value="{{ old('email') }}" required>
         </div>
         <div class="form-group">
             <label for="password">パスワード</label>

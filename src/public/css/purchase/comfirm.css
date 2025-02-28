@@ -1,0 +1,119 @@
+/* 基本レイアウト */
+.confirm-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* 商品情報 */
+.item-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.item-info img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.item-info h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.item-info p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* 住所セクション */
+.address-section {
+    text-align: left;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.address-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.address-section p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.address-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.address-button:hover {
+    background-color: #0056b3;
+}
+
+/* 支払い方法 */
+form {
+    text-align: left;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#payment_method {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* 購入ボタン */
+.confirm-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.confirm-button:hover {
+    background-color: #e60000;
+}
+
+/* 戻るボタン */
+.back-button {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.back-button:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,117 @@
+.item-detail-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.item-detail {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.item-image img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.item-info {
+    flex: 1;
+}
+
+.item-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.item-brand {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.item-price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #e44d26;
+    margin-bottom: 15px;
+}
+
+.item-actions {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.favorite-btn,
+.purchase-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.favorite-btn {
+    background-color: #ffcc00;
+    color: #333;
+}
+
+.purchase-btn {
+    background-color: #e44d26;
+    color: #fff;
+}
+
+.item-description,
+.item-info-details,
+.item-comments {
+    margin-top: 20px;
+}
+
+.item-description h2,
+.item-info-details h2,
+.item-comments h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.comment {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.comment p {
+    margin: 5px 0;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button[type="submit"] {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #e44d26;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}

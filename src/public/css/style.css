@@ -1,0 +1,92 @@
+/* ====================
+  ヘッダー
+==================== */
+.auth-header {
+    background-color: #000000; /* 黒背景 */
+    height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* ロゴとナビを両端に配置 */
+    padding: 0 25px;
+    color: #ffffff;
+}
+
+.logo img {
+    width: 370px;
+    height: 36px;
+}
+
+/* ナビゲーション */
+.nav-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu a {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+}
+
+/* ====================
+  基本レイアウト
+==================== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    background-color: #f9f9f9; /* 全体背景色 */
+    color: #333;
+    box-sizing: border-box;
+}
+
+/* ====================
+  ボタン（Figma準拠）
+==================== */
+.button {
+    background-color: #e63946; /* 赤系のボタン */
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #d62828; /* ホバー時 */
+}
+
+/* ====================
+  商品一覧（画像サイズ調整）
+==================== */
+.item-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.item {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px); /* 3列レイアウトにする */
+    text-align: center;
+}
+
+.item img {
+    max-width: 100%; /* 幅を100%に調整 */
+    height: auto; /* 高さを自動調整 */
+    max-height: 250px; /* 最大高さを設定（必要に応じて調整） */
+    object-fit: cover; /* 画像の比率を維持 */
+    border-radius: 5px;
+}
